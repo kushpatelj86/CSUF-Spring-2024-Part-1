@@ -1,0 +1,593 @@
+*{
+    background-color: rgb(187, 233, 246);
+}
+
+
+.home-page {
+    text-align: center;
+}
+
+.main-title{
+    color : rgb(3, 119, 13);
+    font-size: 30px;
+    font-weight: bold; 
+    font-family: "Georgia", sans-serif;
+}
+#info-form{
+    align-items: center;
+
+}
+
+.message-title{
+    text-align: center;
+    align-items: center;
+    color : rgb(3, 90, 119);
+    font-family: "Copperplate", "Papyrus", "fantasy";
+}
+
+.user-info{
+    color : rgb(3, 119, 13);
+    font-size: 30px;
+    font-weight: bold; 
+    font-family: "Georgia", sans-serif;
+}
+#user{
+    color : rgb(3, 119, 13);
+    font-size: 18px;
+    font-weight: bold; 
+    font-family: "Georgia", sans-serif;
+}
+
+#diet{
+    color : rgb(3, 119, 13);
+    font-size: 18px;
+    font-weight: bold; 
+    font-family: "Georgia", sans-serif;
+}
+
+
+/*.message-title a{
+    text-decoration: none;
+    color: rgb(255, 60, 0);
+    
+    display: block;
+}
+
+.message-title a::before{
+    content:"";
+    position: absolute;
+    background: #40705f;
+    height: 6px;
+    width: 12%;
+    display: block;
+    bottom : 360px;
+
+    left: 280;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+
+.message-title a:hover:before{
+    transform: scaleX(1);
+}*/
+
+.message-title .join{
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: rgb(255, 60, 0);
+    font-size: 20px;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.message-title .join::before, .message-title .join::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.message-title .join:hover{
+    background: #f6e05e;
+    box-shadow: 0 0 5px #f6e05e, 0 0 25px #f6e05e, 0 0 50px #f6e05e, 0 0 200px #f6e05e;
+    color : #e91414
+}
+
+
+.welcome-message
+{
+    font-family: "Copperplate", "Papyrus", "fantasy";
+    color : rgb(28, 11, 82);
+    font-size: 18px;
+
+}
+
+
+.menu-page{
+    text-align: center;
+    align-items: center;
+
+}
+
+.choose-option{
+    display:inline-flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.choose-option nav{
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.choose-option nav ul{
+    list-style-type: none;
+
+}
+
+
+.choose-option nav ul li {
+    vertical-align: baseline;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 30px;
+    width: default;
+    display: inline-block;
+}
+.choose-option nav ul li a{
+    color: blue;
+    text-decoration: none;
+    display: block;
+}
+
+
+.choose-option nav  ul li a::after{
+    content : "";
+    height : 4px;
+    width : 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    position: relative;
+    left : 0;
+    background: blueviolet;
+    transition: 1.0s;
+    bottom: -0px;
+    display: block;
+
+}   
+
+
+
+
+
+.choose-option nav  ul li a:hover::after{
+    width: 100%;
+
+}
+
+
+.bmi-page{
+    text-align: center;
+}
+
+
+.menu-title{
+    color : rgb(3, 119, 13);
+    font-size: 30px;
+    font-weight: bold; 
+    font-family: "Georgia", sans-serif;
+}
+
+
+.bmi-title{
+    color : rgb(3, 119, 13);
+    font-size: 22px;
+    font-weight: bold; 
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.height-info{
+    color: blue;
+    font-size: 18px;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-family: "Monaco", Monospace;
+}
+
+.height-info input{
+    color: blue;
+    background: #f2f2f2;
+    font-size: 18px;
+    font-family: "Monaco", Monospace;
+}
+
+.weight-info{
+    color: blue;
+    font-size: 18px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+
+    font-family: "Monaco", Monospace;
+}
+
+.weight-info input{
+    color: blue;
+    background: #f2f2f2;
+    font-size: 18px;
+    font-family: "Monaco", Monospace;
+}
+
+
+.workout-generator-page{
+    text-align: center;
+
+}
+
+.workout-generator-page{
+    text-align: center;
+
+}
+
+
+
+
+
+
+.message-title{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+.diet-page{
+    text-align: center;
+}
+
+/*.message-title a{
+    text-decoration: none;
+    color: rgb(255, 60, 0);
+    
+    display: block;
+}
+
+.message-title a::before{
+    content:"";
+    position: absolute;
+    background: #40705f;
+    height: 6px;
+    width: 12%;
+    display: block;
+    bottom : 360px;
+
+    left: 280;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+}
+
+.message-title a:hover:before{
+    transform: scaleX(1);
+}*/
+
+.return-home .join{
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: rgb(225, 86, 86);
+    font-size: 20px;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.return-home  .join::before, .message-title .join::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.return-home  .join:hover{
+    background: #85d286;
+    box-shadow: 0 0 5px #85d286, 0 0 25px #85d286, 0 0 50px #85d286, 0 0 200px #85d286;
+    color : #b7e914
+}
+
+.bmi-buttons .btn-sucess{
+    padding:  0.5em 1em;
+    margin-top: 10px;
+    margin : 0.25em;
+    font-size: 12px;
+    font-family: "Monaco", Monospace;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    color:#09f815;
+    background-color: rgb(135, 15, 105);
+    border-color: blueviolet;
+}
+
+.btn-sucess:hover{
+    background: #cccc;
+}
+.diet-form {
+    background-color: rgb(187, 233, 246);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(225, 187, 246);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu-form {
+    background-color: rgb(187, 233, 246);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(225, 187, 246);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-page .menu-form h2 {
+    color: #32a6a8;
+    background-color: rgb(225, 187, 246);
+
+}
+
+
+.menu-page .menu-form h2 {
+    color: #32a6a8;
+    background-color: rgb(225, 187, 246);
+
+}
+
+.menu-page .menu-form form {
+    display: flex;
+    background-color: rgb(225, 187, 246);
+
+    flex-direction: column;
+}
+
+.menu-page .menu-form label {
+    margin-top: 10px;
+    background-color: rgb(225, 187, 246);
+    font-family: "Monaco", Monospace;
+
+}
+.menu-page .menu-form input[type="number"],
+.menu-page .menu-form select,
+.menu-page .menu-form input[type="text"]  {
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    background: #f2f2f2;
+    border: 1px solid rgb(0, 6, 8);
+    border-radius: 4px;
+    font-family: "Monaco", Monospace;
+
+}
+
+
+.menu-page .menu-form input[type="submit"]{
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    background: #d17979;
+    border: 1px solid rgb(0, 6, 8);
+    border-radius: 4px;
+    font-family: "Monaco", Monospace;
+}
+
+.diet-page .diet-form h2 {
+    color: #32a6a8;
+    background-color: rgb(225, 187, 246);
+
+}
+
+.diet-page .diet-form form {
+    display: flex;
+    background-color: rgb(225, 187, 246);
+
+    flex-direction: column;
+}
+
+.diet-page .diet-form label {
+    margin-top: 10px;
+    background-color: rgb(225, 187, 246);
+    font-family: "Monaco", Monospace;
+
+}
+
+.diet-page .diet-form input[type="number"],
+.diet-page .diet-form select,
+.diet-page .diet-form input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    background: #f2f2f2;
+    border: 1px solid rgb(0, 6, 8);
+    border-radius: 4px;
+    font-family: "Monaco", Monospace;
+
+}
+
+.diet-page .diet-form input[type="submit"] {
+    background-color: #32a6a8;
+    color: rgb(202, 187, 246);
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.diet-page .diet-form input[type="submit"]:hover {
+    background-color: #2d8c8e;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.diet-title{
+    color : rgb(3, 119, 13);
+    font-size: 22px;
+    font-weight: bold; 
+    font-family: "Lucida Handwriting", cursive;
+}
+
+
+.workout-generator-title{
+    color : rgb(3, 119, 13);
+    font-size: 22px;
+    font-weight: bold; 
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.diet-message
+{
+    font-family: "Copperplate", "Papyrus", "fantasy";
+    color : rgb(28, 11, 82);
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+
+
+table, th, td{
+    border:1px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: rgb(225, 187, 246);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.check-boxes-muscle-groups td label{
+    background-color: rgb(225, 187, 246);
+
+}
+
+  .workout-generator-button {
+    padding:  0.5em 1em;
+    margin-top: 10px;
+    margin : 0.25em;
+    font-size: 12px;
+    font-family: "Monaco", Monospace;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    color:#09f815;
+    background-color: rgb(135, 15, 105);
+    border-color: blueviolet;
+}
+
+.workout-generator-button:hover{
+    background: #cccc;
+}
+.navbar a{
+    color:green !important;
+    background-color: transparent;
+    font-family: 'Vidaloka', serif;
+}
+
+.navbar a:hover{
+    color:blue !important;
+    
+}
+
+navbar-collapse{
+    color:green !important;
+    background-color: burlywood;
+    font-family: 'Vidaloka', serif;
+}
+html body{
+    background-color: rgb(187, 233, 246);
+}
+
+.navbar navbar-expand-lg navbar-light bg-transparent sticky-top{
+    background-color: #32a6a8;
+}
+
+
+
+
+.menu-title{
+        position: relative;
+        text-align: center;
+        color: white;
+        
+}
+.image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: antiquewhite;
+    font-size: 150px;
+}
+
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.divider {
+    margin: 0 20px;
+    border-right: 2px solid #ccc;
+    height: 300px; /* Adjust height based on content */
+}
+
+/* Additional styles for login/signup buttons */
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #32a6a8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2d8c8e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" >
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="stylesheets/style.css"/>
+      <script src="scripts/script.js" defer></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a83c84c63a.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<body>
+    <div class="login-container">
+        <form id="login-form" class="form-container">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+            <button type="submit"  onclick="navigate(event)">Login</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <form id="signup-form" class="form-container">
+            <h2>Sign Up</h2>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <button type="submit" onclick="navigate(event)">Sign Up</button>
+        </form>
+    </div>
+
+</body>
+</html>

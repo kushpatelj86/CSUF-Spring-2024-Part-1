@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8" >
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="stylesheets/style.css"/>
+      <script src="scripts/sendworkout.js" defer></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a83c84c63a.js" crossorigin="anonymous"></script>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+              <a class="navbar-brand" href="menupage.html">FitFix</a>
+          </li>
+  
+          <li class="nav-item active">
+            <a class="nav-link" href="body.html"> Body Composition <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dietplan.html"> Diet Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workoutgenerator.html"> Workout </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<body>
+    <div class="workout-generator-page">
+        <div class="workout-generator-title">
+             <h1><center>Generate a Random Workout</center></h1> 
+        </div>
+
+<form id="weeklyWorkoutForm">
+  <table style="width:100%">
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr class="check-boxes-muscle-groups">
+      <!-- Monday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="mondayBack" name="monday" value="Back">
+        <label for="mondayBack"> Back</label><br>
+        <input type="checkbox" id="mondayShoulder" name="monday" value="Shoulders">
+        <label for="mondayShoulder"> Shoulders</label><br>
+        <input type="checkbox" id="mondayLegs" name="monday" value="Legs">
+        <label for="mondayLegs"> Legs</label><br>
+        <input type="checkbox" id="mondayChest" name="monday" value="Chest">
+        <label for="mondayChest"> Chest</label><br>
+        <input type="checkbox" id="mondayDeltoids" name="monday" value="Deltoids">
+        <label for="mondayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="mondayBiceps" name="monday" value="Biceps">
+        <label for="mondayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="mondayForearm" name="monday" value="Forearms">
+        <label for="mondayLegs"> Forearm</label><br>
+        <input type="checkbox" id="mondaySideAbs" name="monday" value="SideAbs">
+        <label for="mondaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="mondayAbdominal" name="monday" value="Abdominals">
+        <label for="mondayLegs"> Abdominals</label><br>
+        <input type="checkbox" id="mondayQuads" name="monday" value="Quads">
+        <label for="mondayQuads"> Quads</label><br>
+        <input type="checkbox" id="mondayCalfs" name="monday" value="Calfs">
+        <label for="mondayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="mondayTibialAnterior" name="monday" value="TibialAnterior">
+        <label for="mondayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="mondayUpperBack" name="monday" value="UpperBack">
+        <label for="mondayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="mondayMiddleBack" name="monday" value="MiddleBack">
+        <label for="mondayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="mondayLowerBack" name="monday" value="LowerBack">
+        <label for="mondayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="mondayTriceps" name="monday" value="Triceps">
+        <label for="mondayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="mondayHamstring" name="monday" value="Hamstring">
+        <label for="mondayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="mondayGlutes" name="monday" value="Glutes">
+        <label for="mondayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Tuesday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="tuesdayBack" name="tuesday" value="Back">
+        <label for="tuesdayBack"> Back</label><br>
+        <input type="checkbox" id="tuesdayShoulder" name="tuesday" value="Shoulder">
+        <label for="tuesdayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="tuesdayLegs" name="tuesday" value="Legs">
+        <label for="tuesdayLegs"> Legs</label><br>
+        <input type="checkbox" id="tuesdayChest" name="tuesday" value="Chest">
+        <label for="tuesdayChest"> Chest</label><br>
+        <input type="checkbox" id="tuesdayDeltoids" name="tuesday" value="Deltoids">
+        <label for="tuesdayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="tuesdayBiceps" name="tuesday" value="Biceps">
+        <label for="tuesdayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="tuesdayForearm" name="tuesday" value="Forearm">
+        <label for="tuesdayLegs"> Forearm</label><br>
+        <input type="checkbox" id="tuesdaySideAbs" name="tuesday" value="SideAbs">
+        <label for="tuesdaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="tuesdayAbdominal" name="tuesday" value="Abdominal">
+        <label for="tuesdayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="tuesdayQuads" name="tuesday" value="Quads">
+        <label for="tuesdayQuads"> Quads</label><br>
+        <input type="checkbox" id="tuesdayCalfs" name="tuesday" value="Calfs">
+        <label for="tuesdayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="tuesdayTibialAnterior" name="tuesday" value="TibialAnterior">
+        <label for="tuesdayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="tuesdayUpperBack" name="tuesday" value="UpperBack">
+        <label for="tuesdayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="tuesdayMiddleBack" name="tuesday" value="MiddleBack">
+        <label for="tuesdayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="tuesdayLowerBack" name="tuesday" value="LowerBack">
+        <label for="tuesdayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="tuesdayTriceps" name="tuesday" value="Triceps">
+        <label for="tuesdayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="tuesdayHamstring" name="tuesday" value="Hamstring">
+        <label for="tuesdayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="tuesdayGlutes" name="tuesday" value="Glutes">
+        <label for="tuesdayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Wednesday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="wednesdayBack" name="wednesday" value="Back">
+        <label for="wednesdayBack"> Back</label><br>
+        <input type="checkbox" id="wednesdayShoulder" name="wednesday" value="Shoulder">
+        <label for="wednesdayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="wednesdayLegs" name="wednesday" value="Legs">
+        <label for="wednesdayLegs"> Legs</label><br>
+        <input type="checkbox" id="wednesdayChest" name="wednesday" value="Chest">
+        <label for="wednesdayChest"> Chest</label><br>
+        <input type="checkbox" id="wednesdayDeltoids" name="wednesday" value="Deltoids">
+        <label for="wednesdayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="wednesdayBiceps" name="wednesday" value="Biceps">
+        <label for="wednesdayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="wednesdayForearm" name="wednesday" value="Forearm">
+        <label for="wednesdayLegs"> Forearm</label><br>
+        <input type="checkbox" id="wednesdaySideAbs" name="wednesday" value="SideAbs">
+        <label for="wednesdaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="wednesdayAbdominal" name="wednesday" value="Abdominal">
+        <label for="wednesdayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="wednesdayQuads" name="wednesday" value="Quads">
+        <label for="wednesdayQuads"> Quads</label><br>
+        <input type="checkbox" id="wednesdayCalfs" name="wednesday" value="Calfs">
+        <label for="wednesdayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="wednesdayTibialAnterior" name="wednesday" value="TibialAnterior">
+        <label for="wednesdayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="wednesdayUpperBack" name="wednesday" value="UpperBack">
+        <label for="wednesdayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="wednesdayMiddleBack" name="wednesday" value="MiddleBack">
+        <label for="wednesdayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="wednesdayLowerBack" name="wednesday" value="LowerBack">
+        <label for="wednesdayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="wednesdayTriceps" name="wednesday" value="Triceps">
+        <label for="wednesdayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="wednesdayHamstring" name="wednesday" value="Hamstring">
+        <label for="wednesdayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="wednesdayGlutes" name="wednesday" value="Glutes">
+        <label for="wednesdayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Thursday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="thursdayBack" name="thursday" value="Back">
+        <label for="thursdayBack"> Back</label><br>
+        <input type="checkbox" id="thursdayShoulder" name="thursday" value="Shoulder">
+        <label for="thursdayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="thursdayLegs" name="thursday" value="Legs">
+        <label for="thursdayLegs"> Legs</label><br>
+        <input type="checkbox" id="thursdayChest" name="thursday" value="Chest">
+        <label for="thursdayChest"> Chest</label><br>
+        <input type="checkbox" id="thursdayDeltoids" name="thursday" value="Deltoids">
+        <label for="thursdayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="thursdayBiceps" name="thursday" value="Biceps">
+        <label for="thursdayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="thursdayForearm" name="thursday" value="Forearm">
+        <label for="thursdayLegs"> Forearm</label><br>
+        <input type="checkbox" id="thursdaySideAbs" name="thursday" value="SideAbs">
+        <label for="thursdaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="thursdayAbdominal" name="thursday" value="Abdominal">
+        <label for="thursdayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="thursdayQuads" name="thursday" value="Quads">
+        <label for="thursdayQuads"> Quads</label><br>
+        <input type="checkbox" id="thursdayCalfs" name="thursday" value="Calfs">
+        <label for="thursdayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="thursdayTibialAnterior" name="thursday" value="TibialAnterior">
+        <label for="thursdayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="thursdayUpperBack" name="thursday" value="UpperBack">
+        <label for="thursdayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="thursdayMiddleBack" name="thursday" value="MiddleBack">
+        <label for="thursdayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="thursdayLowerBack" name="thursday" value="LowerBack">
+        <label for="thursdayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="thursdayTriceps" name="thursday" value="Triceps">
+        <label for="thursdayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="thursdayHamstring" name="thursday" value="Hamstring">
+        <label for="thursdayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="thursdayGlutes" name="thursday" value="Glutes">
+        <label for="thursdayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Friday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="fridayBack" name="friday" value="Back">
+        <label for="fridayBack"> Back</label><br>
+        <input type="checkbox" id="fridayShoulder" name="friday" value="Shoulder">
+        <label for="fridayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="fridayLegs" name="friday" value="Legs">
+        <label for="fridayLegs"> Legs</label><br>
+        <input type="checkbox" id="fridayChest" name="friday" value="Chest">
+        <label for="fridayChest"> Chest</label><br>
+        <input type="checkbox" id="fridayDeltoids" name="friday" value="Deltoids">
+        <label for="fridayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="fridayBiceps" name="friday" value="Biceps">
+        <label for="fridayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="fridayForearm" name="friday" value="Forearm">
+        <label for="fridayLegs"> Forearm</label><br>
+        <input type="checkbox" id="fridaySideAbs" name="friday" value="SideAbs">
+        <label for="fridaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="fridayAbdominal" name="friday" value="Abdominal">
+        <label for="fridayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="fridayQuads" name="friday" value="Quads">
+        <label for="fridayQuads"> Quads</label><br>
+        <input type="checkbox" id="fridayCalfs" name="friday" value="Calfs">
+        <label for="fridayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="fridayTibialAnterior" name="friday" value="TibialAnterior">
+        <label for="fridayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="fridayUpperBack" name="friday" value="UpperBack">
+        <label for="fridayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="fridayMiddleBack" name="friday" value="MiddleBack">
+        <label for="fridayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="fridayLowerBack" name="friday" value="LowerBack">
+        <label for="fridayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="fridayTriceps" name="friday" value="Triceps">
+        <label for="fridayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="fridayHamstring" name="friday" value="Hamstring">
+        <label for="fridayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="fridayGlutes" name="friday" value="Glutes">
+        <label for="fridayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Saturday's Workouts -->
+      <td align="left">
+        <input type="checkbox" id="saturdayBack" name="saturday" value="Back">
+        <label for="saturdayBack"> Back</label><br>
+        <input type="checkbox" id="saturdayShoulder" name="saturday" value="Shoulder">
+        <label for="saturdayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="saturdayLegs" name="saturday" value="Legs">
+        <label for="saturdayLegs"> Legs</label><br>
+        <input type="checkbox" id="saturdayChest" name="saturday" value="Chest">
+        <label for="saturdayChest"> Chest</label><br>
+        <input type="checkbox" id="saturdayDeltoids" name="saturday" value="Deltoids">
+        <label for="saturdayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="saturdayBiceps" name="saturday" value="Biceps">
+        <label for="saturdayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="saturdayForearm" name="saturday" value="Forearm">
+        <label for="saturdayLegs"> Forearm</label><br>
+        <input type="checkbox" id="saturdaySideAbs" name="saturday" value="SideAbs">
+        <label for="saturdaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="saturdayAbdominal" name="saturday" value="Abdominal">
+        <label for="saturdayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="saturdayQuads" name="saturday" value="Quads">
+        <label for="saturdayQuads"> Quads</label><br>
+        <input type="checkbox" id="saturdayCalfs" name="saturday" value="Calfs">
+        <label for="saturdayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="saturdayTibialAnterior" name="saturday" value="TibialAnterior">
+        <label for="saturdayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="saturdayUpperBack" name="saturday" value="UpperBack">
+        <label for="saturdayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="saturdayMiddleBack" name="saturday" value="MiddleBack">
+        <label for="saturdayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="saturdayLowerBack" name="saturday" value="LowerBack">
+        <label for="saturdayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="saturdayTriceps" name="saturday" value="Triceps">
+        <label for="saturdayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="saturdayHamstring" name="saturday" value="Hamstring">
+        <label for="saturdayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="saturdayGlutes" name="saturday" value="Glutes">
+        <label for="saturdayGlutes"> Glutes</label><br>
+      </td>
+      <!-- Sunday's Workouts -->
+      <td align="left">  
+        <input type="checkbox" id="sundayBack" name="sunday" value="Back">
+        <label for="sundayBack"> Back</label><br>
+        <input type="checkbox" id="sundayShoulder" name="sunday" value="Shoulder">
+        <label for="sundayShoulder"> Shoulder</label><br>
+        <input type="checkbox" id="sundayLegs" name="sunday" value="Legs">
+        <label for="sundayLegs"> Legs</label><br>
+        <input type="checkbox" id="sundayChest" name="sunday" value="Chest">
+        <label for="sundayChest"> Chest</label><br>
+        <input type="checkbox" id="sundayDeltoids" name="sunday" value="Deltoids">
+        <label for="sundayDeltoids"> Deltoids</label><br>
+        <input type="checkbox" id="sundayBiceps" name="sunday" value="Biceps">
+        <label for="sundayBiceps"> Biceps</label><br>
+        <input type="checkbox" id="sundayForearm" name="sunday" value="Forearm">
+        <label for="sundayLegs"> Forearm</label><br>
+        <input type="checkbox" id="sundaySideAbs" name="sunday" value="SideAbs">
+        <label for="sundaySideAbs"> Side Abs</label><br>
+        <input type="checkbox" id="sundayAbdominal" name="sunday" value="Abdominal">
+        <label for="sundayLegs"> Abdominal</label><br>
+        <input type="checkbox" id="sundayQuads" name="sunday" value="Quads">
+        <label for="sundayQuads"> Quads</label><br>
+        <input type="checkbox" id="sundayCalfs" name="sunday" value="Calfs">
+        <label for="sundayCalfs"> Calfs</label><br>
+        <input type="checkbox" id="sundayTibialAnterior" name="sunday" value="TibialAnterior">
+        <label for="sundayTibialAnterior"> Tibial Anterior</label><br>
+        <input type="checkbox" id="sundayUpperBack" name="sunday" value="UpperBack">
+        <label for="sundayUpperBack"> Upper Back</label><br>
+        <input type="checkbox" id="sundayMiddleBack" name="sunday" value="MiddleBack">
+        <label for="sundayMiddleBack"> Middle Back</label><br>
+        <input type="checkbox" id="sundayLowerBack" name="sunday" value="LowerBack">
+        <label for="sundayLowerback"> Lower Back</label><br>
+        <input type="checkbox" id="sundayTriceps" name="sunday" value="Triceps">
+        <label for="sundayTriceps"> Triceps</label><br>
+        <input type="checkbox" id="sundayHamstring" name="sunday" value="Hamstring">
+        <label for="sundayHamstring"> Hamstring</label><br>
+        <input type="checkbox" id="sundayGlutes" name="sunday" value="Glutes">
+        <label for="sundayGlutes"> Glutes</label><br>
+      </td>
+    </tr>
+  </table>
+
+  <div> <center> <button type="submit" onclick="sendWeeklyWorkouts(event)">Send Workouts</button>  </center> </div>
+  <div> <center> <button type="submit" onclick="getWeeklyWorkouts(event)">Get Workouts</button>  </center> </div>
+
+</form>
+<div>
+    <center>
+<p id="displayMonday"></p>
+<p id="displayTuesday"></p>
+<p id="displayWednesday"></p>
+<p id="displayThursday"></p>
+<p id="displayFriday"></p>
+<p id="displaySaturday"></p>
+<p id="displaySunday"></p>
+</center>
+</div>
+
+<div  class="users-info">
+  <h1 id="workouts"></h1>
+</div>
+<div class="return-home"><center>
+    <a class="join" href="menupage.html">Menu Page</a>
+</center></div>
+
+
+
+</div>
+
+
+</body>
+
+<footer><center>
+
+<p>&copy; 2024 FitFix. All rights reserved.</p>
+</center></footer>
+</html>
